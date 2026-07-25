@@ -45,6 +45,14 @@ body{
     linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 45%, var(--bg-2) 100%);
 }
 
+/* ---------- nature background (dusk forest) ---------- */
+#stars-canvas.nature-bg{
+  background:
+    radial-gradient(ellipse 70% 45% at 25% 5%, rgba(255,200,97,0.10), transparent 60%),
+    radial-gradient(ellipse 60% 45% at 90% 10%, rgba(99,245,214,0.10), transparent 60%),
+    linear-gradient(180deg, #071810 0%, #0a2417 45%, #123422 100%);
+}
+
 .content{
   position:relative;
   z-index:1;
