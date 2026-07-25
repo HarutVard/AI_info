@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ԱԲ Հոսք · Ուսումնական Կայք</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+
+<div class="content">
+
+  <header class="site">
+    <div class="eyebrow">Ուսումնական հարթակ</div>
+    <h1>ԱԲ Հոսքի Աստղագիտարան</h1>
+    <p class="sub">Ընտրիր քո դասարանը, հարցեր տուր AI-ին, և հասանելիություն ստացիր բոլոր նյութերին ու ուսումնական ռեսուրսներին։</p>
+  </header>
+
+  <nav class="orbits" aria-label="Դասարանների ընտրություն">
+    <a class="orbit-btn" style="--accent: var(--teal)" href="Class10.html">
+      <span class="orbit-ring">10</span>
+      <span class="orbit-label">
+        <span class="t">10-րդ դասարան</span>
+        <span class="d">Առաջին օրբիտ · հիմունքներ</span>
+      </span>
+      <span class="orbit-arrow">→</span>
+    </a>
+
+    <a class="orbit-btn" style="--accent: var(--violet)" href="Class11.html">
+      <span class="orbit-ring">11</span>
+      <span class="orbit-label">
+        <span class="t">11-րդ դասարան</span>
+        <span class="d">Երկրորդ օրբիտ · խորացում</span>
+      </span>
+      <span class="orbit-arrow">→</span>
+    </a>
+
+    <a class="orbit-btn" style="--accent: var(--gold)" href="Class12.html">
+      <span class="orbit-ring">12</span>
+      <span class="orbit-label">
+        <span class="t">12-րդ դասարան</span>
+        <span class="d">Երրորդ օրբիտ · ավարտական</span>
+      </span>
+      <span class="orbit-arrow">→</span>
+    </a>
+  </nav>
+
+  <div class="section-divider">
+    <span class="line"></span>
+    <span>Հարցեր AI-ին</span>
+    <span class="line"></span>
+  </div>
+
+  <div class="terminal-wrap">
+    <div class="terminal">
+      <div class="terminal-head">
+        <span class="dot"></span>
+        <span class="title">comm-channel · AI օգնական</span>
+        <span class="status"><span class="pulse"></span><span id="terminal-status-text">Պատրաստ է</span></span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="msg ai">Բարև 👋 Ես կարող եմ պատասխանել քո ուսումնական հարցերին։ Գրիր ստորև։</div>
+      </div>
+      <div class="terminal-input">
+        <input type="text" id="terminal-text" placeholder="Գրիր քո հարցը..." autocomplete="off">
+        <button id="terminal-send">Ուղարկել</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider">
+    <span class="line"></span>
+    <span>Ռեսուրսներ</span>
+    <span class="line"></span>
+  </div>
+
+  <div class="resources">
+    <a class="res-btn" style="--accent: var(--teal)" href="https://drive.google.com/drive/folders/1IYR-PTMZjx_X45XJBED2SkKyZxXy_4lW" target="_blank" rel="noopener">
+      <span class="icon">📁</span>
+      <span class="t">ԱԲ Հոսքի Քննություններ</span>
+      <span class="d">Google Drive թղթապանակ նախորդ քննություններով</span>
+    </a>
+
+    <a class="res-btn" style="--accent: var(--gold)" href="https://profound.academy/" target="_blank" rel="noopener">
+      <span class="icon">🎓</span>
+      <span class="t">Profound Academy</span>
+      <span class="d">Լրացուցիչ ուսումնական հարթակ</span>
+    </a>
+  </div>
+
+</div>
+
+<footer class="site">ԱԲ Հոսքի Աստղագիտարան</footer>
+
+<script src="https://js.puter.com/v2/"></script>
+<script src="stars.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
